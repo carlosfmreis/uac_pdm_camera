@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-img *ngIf="picture" [src]="picture"></ion-img>
+  <div class="center">
+    <ion-button (click)="takePicture()">
+      <ion-icon slot="start" name="camera"></ion-icon>
+      Take a picture
+    </ion-button>
+  </div>
+</ion-content>
